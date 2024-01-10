@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const postsApi = createApi({
     reducerPath: 'postsApi',
-    baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_FETCH_URL }),
+    baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_FETCH}),
     endpoints: (builder) => ({
         getPosts: builder.query({
             query: ({ limit = 10, start = 0 }) => {
