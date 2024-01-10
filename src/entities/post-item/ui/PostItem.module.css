@@ -1,0 +1,38 @@
+.postitem__container {
+    padding: 0;
+    border: 1px solid grey;
+    list-style: none;
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px 0;
+}
+.postitem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.postitem__number,
+.postitem__title,
+.postitem__text {
+    white-space: nowrap;
+}
+
+.postitem__number {
+    font-weight: 600;
+}
+
+.postitem__title {
+    width:max-content;
+    color: grey;
+}
+
+.postitem__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.postitem__button {
+    display: none;
+    margin-left: auto;
+    cursor: pointer;
+}
