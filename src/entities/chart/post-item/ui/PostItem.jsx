@@ -25,7 +25,7 @@ export const PostItem = ({ post }) => {
   }, [inView]);
 
   const clickHandler = () => {
-    navigate(`/posts/${post.id}`);
+    navigate(`/${post.id}`);
   };
 
   return (

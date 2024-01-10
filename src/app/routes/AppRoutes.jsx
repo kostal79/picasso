@@ -5,11 +5,11 @@ import { Post } from "@pages/Post";
 export const AppRoutes = () => {
   const router = createBrowserRouter([
     {
-      path: "/posts",
+      path: "/",
       element: <Posts />,
     },
     {
-      path: "/posts/:id",
+      path: "/:id",
       element: <Post />,
     },
   ]);
