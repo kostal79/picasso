@@ -1,14 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useGetPostsQuery } from "./postsAPI";
-import { increment, setLimit } from "./postsSlice";
+import { increment } from "./postsSlice";
 import { useEffect } from "react";
 
 export const useFetchData = () => {
 
-    const limit = useSelector((state) => state.posts.limit);
     const dispath = useDispatch();
-    if (limit === 0)
-        dispath(setLimit(Math.ceil(document.documentElement.clientHeight / 40)));
+    const limit = (Math.ceil(document.documentElement.clientHeight / 40));
     const page = useSelector((state) => state.posts.startWith);
 
     const { data, isLoading, isFetching, error, isSuccess } = useGetPostsQuery({

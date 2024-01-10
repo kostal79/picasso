@@ -2,7 +2,6 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   startWith: 0,
-  limit: 0,
 }
 
 export const postsSlice = createSlice({
@@ -15,9 +14,6 @@ export const postsSlice = createSlice({
     decrement: (state) => {
       state.startWith -= 1
     },
-    setLimit: (state, actions) => {
-        state.limit = actions.payload
-    }
   },
 })
 

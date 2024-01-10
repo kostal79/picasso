@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const postsApi = createApi({
     reducerPath: 'postsApi',
-    baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_FETCH}),
+    baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_JSONPLACEHOLDER}),
     endpoints: (builder) => ({
         getPosts: builder.query({
             query: ({ limit = 10, start = 0 }) => {
@@ -25,10 +25,8 @@ export const postsApi = createApi({
                 console.log('currentArg', currentArg)
                 console.log('previousArg', previousArg)
                 if (currentArg.start === previousArg?.start) {
-                    console.log("not fetch")
                     return false
                 }
-                console.log("feth")
                 return true;
             },
 
