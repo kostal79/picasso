@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { postsApi } from '../services/posts'
 import { setupListeners } from '@reduxjs/toolkit/query'
-import postsReducer from "../../entities/posts-list/api/postsSlice"
+import { postsApi } from '@entities/chart'
+import { postsReducer } from '@entities/chart/posts-list'
 
 export const store = configureStore({
   reducer: {

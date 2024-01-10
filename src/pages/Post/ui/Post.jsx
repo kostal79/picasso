@@ -1,8 +1,9 @@
 import React from 'react'
-import { useGetPostByIdQuery } from '../../../services/posts'
 import { useParams } from 'react-router-dom';
-import { Loader } from '../../../components/loader';
-import { PostCard } from '../../../components/post-card';
+import { useGetPostByIdQuery } from '@entities/chart/posts-list';
+import { Loader } from '@shared/loader';
+import { PostCard } from '../../../entities/post-card';
+
 
 export const Post = () => {
   const {id} = useParams()

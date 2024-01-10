@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Post } from "@pages/Post/ui/Post";
 import { Posts } from "@pages/Posts";
+import { Post } from "@pages/Post";
 
 export const AppRoutes = () => {
   const router = createBrowserRouter([

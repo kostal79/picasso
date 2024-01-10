@@ -11,6 +11,7 @@ export default defineConfig({
       '@app': path.resolve("src", "app"),
       '@pages': path.resolve("src", "pages"),
       '@entities': path.resolve("src", "entities"),
+      '@shared': path.resolve("src", "shared"),
     }
   }
 })
